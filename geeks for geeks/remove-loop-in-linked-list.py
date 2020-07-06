@@ -10,15 +10,10 @@ class Node:
 
 
 def removeLoop(head):
-  map = {}
-  temp = head
-  while 1 and temp.next is not None:
-    if temp.next.data in map:
-      temp.next = None
-      break
-    map[temp.data] = 1
-    temp = temp.next
-  return head
+  first = head
+  second = head
+
+
 
 class Node:
   def __init__(self, val):
